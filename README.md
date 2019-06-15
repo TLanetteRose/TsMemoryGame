@@ -28,8 +28,8 @@ I remember playing **Concentration** with a deck of playing cards when I was a l
 ## Dependencies
 
 This game uses the following library(s):
-* [Font Awesome] : used for the icons in the memory game
-* [Google Fonts] : Open Sans was used for the body font and Spicy Rice was used for the titles
+* [Font Awesome](https://fontawesome.com/icons?from=io) : used for the icons in the memory game
+* [Google Fonts](https://fonts.google.com/) : Open Sans was used for the body font and Spicy Rice was used for the titles
 
 ## Installations 
 
