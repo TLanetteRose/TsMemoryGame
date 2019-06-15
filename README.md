@@ -10,7 +10,7 @@ Memory Game project from Udacity with the help of tutorials
 
 ## Welcome and Background
 
-Welcome to my first **Memory Game**. (Actually, it’s my third one, and the one that works.)  I want to say thank you to [] for her tutorial about designing a memory game. JavaScript is not my strongest area. Ms. Israel-Ovirih included guidelines for planning this project. My goal was to produce a memory game with a cover image and the group of matching images on the other side of the card. I’m still working on that version. This version uses the **Font Awesome**  icons and a special trick to keep them hidden…So, let’s talk about my project!
+Welcome to my first **Memory Game**. (Actually, it’s my third one, and the one that works.)  I want to say thank you to [Sandra Israel-Ovirih] for her tutorial about designing a memory game. JavaScript is not my strongest area. Ms. Israel-Ovirih included guidelines for planning this project. My goal was to produce a memory game with a cover image and the group of matching images on the other side of the card. I’m still working on that version. This version uses the **Font Awesome**  icons and a special trick to keep them hidden…So, let’s talk about my project!
 
 ## Instructions
 
