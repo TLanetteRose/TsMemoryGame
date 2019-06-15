@@ -2,11 +2,11 @@
 Memory Game project from Udacity with the help of tutorials
 
 ## Table of Contents
-* Welcome and Background {#welcomeandbackground}
-* Instructions {#instructions}
-* Dependencies {#dependencies}
-* Installations {#installations}
-* How I Created My Game {#howicreatedmygame}
+* Welcome and Background 
+* Instructions 
+* Dependencies 
+* Installations 
+* How I Created My Game 
 
 ## Welcome and Background
 
@@ -28,8 +28,8 @@ I remember playing **Concentration** with a deck of playing cards when I was a l
 ## Dependencies
 
 This game uses the following library(s):
--  [Font Awesome] : used for the icons in the memory game
--  [Google Fonts] : Open Sans was used for the body font and Spicy Rice was used for the titles
+* [Font Awesome] : used for the icons in the memory game
+* [Google Fonts] : Open Sans was used for the body font and Spicy Rice was used for the titles
 
 ## Installations 
 
