@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="utf-8">
+  <title>TLanette's Memory Game</title>
+  <meta name="description" content="Memory Game using Font-Awesome Icons">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <!--  Styles  -->
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Spicy+Rice&display=swap">
+  <link rel="stylesheet" href="css/tmgapp.css">
+</head>
+
+<body>
+    <div class="container">
+      <header>
+		    <h1>T's Memory Game</h1>
+      </header>
+    
+	
+	<!--Begin Score Panel-->
+		  <div class="score-panel">
+        	<ul class="stars">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
+          &nbsp;
+        	<span class="moves">0 </span>&nbsp;Moves
+          <div class="timer">0 mins 0 secs</div>
+
+          <div class="restart" onclick="startGame()">
+        		<i class="fa fa-repeat"></i>
+        	</div>
+      </div>
+     <!--End Score Panel-->  
+    
+     
+		  <ul id="card-deck" class="deck">
+          <li class="card" type="diamond">
+                <i class="fa fa-diamond"></i>
+          </li>
+          <li class="card" type="plane">
+                <i class="fa fa-paper-plane-o"></i>
+          </li>
+          <li class="card" type="anchor">
+                <i class="fa fa-anchor"></i>
+          </li>
+          <li class="card" type="bolt">
+                <i class="fa fa-bolt"></i>
+          </li>
+          <li class="card" type="cube">
+                <i class="fa fa-cube"></i>
+          </li>
+          <li class="card" type="anchor">
+               <i class="fa fa-anchor"></i>
+          </li>
+          <li class="card" type="leaf">
+                <i class="fa fa-leaf"></i>
+          </li>
+          <li class="card" type="bicycle">
+                <i class="fa fa-bicycle"></i>
+          </li>
+          <li class="card" type="diamond">
+                <i class="fa fa-diamond"></i>
+          </li>
+          <li class="card" type="bomb">
+                <i class="fa fa-bomb"></i>
+          </li>
+          <li class="card" type="leaf">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="card" type="bomb">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="card" type="bolt">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card" type="bicycle">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="card" type="plane">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="card" type="cube">
+                <i class="fa fa-cube"></i>
+           </li>
+       
+			</ul><!--End Memory Game Board-->
+     
+
+      <div id="popup" class="overlay">
+        <div class="congrats">
+          <h2>Congratulations!!</h2>
+          <a class="close" href="#">x</a>
+          <div class="message1">
+            Congratulations! You are winner! 
+          </div>
+
+          <div class="message2">
+            <p>You made <span id="finalMove"></span> moves.</p>
+            <p>in <span id="totalTime"></span></p>
+            <p>Rating:  
+              <span id="starRating">
+              </span>
+            </p>
+          </div>
+
+          <button id="new-game" onclick="playAgain()">New Game</button>
+        </div>
+      </div><!-- End of Modal-->
+
+
+      <footer class="footer">
+        <p>Made by T.Lanette Pollard, ©2019 <a href="http://www.rogetfreelancing.com">RogetFreelancing</a></p>
+        <p>
+          <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+          </a>
+        </p>
+      </footer>
+    </div> 
+
+  
+      
+  <script src="js/tmgapp.js"></script>
+
+</body> <!--End Container-->

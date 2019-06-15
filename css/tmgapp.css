@@ -1,0 +1,330 @@
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	/*outline: 1px solid black;*/
+	box-sizing: inherit;
+}
+
+html, 
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;	
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+header {
+	background-color: #f30e5c;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100px;
+	width: 100%;
+	padding: 25px;
+}
+
+h1 {
+	font-family: 'Spicy Rice', cursive;
+	font-weight: 300;
+	text-align: center;
+}
+
+/*Styles for Memory Game Cards */
+
+
+.deck {
+	width: 660px;
+	height: 720px; 
+	background: #f6c523;
+	padding: 20px;
+	border-radius: 4px;
+	box-shadow: 8px 9px 26px 0 rgba(46, 61, 73, 0.5);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.deck .card {
+	background-color: #f6f3a7;
+	height: 161px;
+	width: 141px;
+	font-size: 0;
+	color: #ffffff;
+	border-radius: 8px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+	transition: all 0.5s;
+	transform-style: preserve-3d;
+	transform: scale(1);
+	
+}
+
+img {
+	height: 161px;
+	width: 141px;
+	padding: 5px;
+
+}
+
+
+.deck .card.open  {
+	transform: rotateY(0);
+	background: #02b3e4;
+	cursor: default;
+	backface-visibility: visible !important;
+}
+
+.deck .card.show {
+	font-size: 33px;
+}
+
+
+.deck .card.match {
+	cursor: default;
+	background: #02ccba;
+	font-size: 33px;
+	backface-visibility: visible !important;
+}
+
+.deck .card.unmatched {
+	backface-visibility: visible !important;
+	background: #e2043b;
+}
+
+.deck .card.disabled {
+	pointer-events: none;
+	opacity: 0.9;
+}
+
+
+/* Styles for the Score Panel */
+
+section.score-panel {
+	display: flex;
+	justify-content: center;
+	height: 50px;
+	width: 100%;
+}
+.score-panel {
+	text-align: left;
+	height: 10px;
+	width: 345px;
+	margin: 30px 30px;
+	padding: 15px;
+}
+
+.score-panel .stars {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	font-size: 15px;
+}
+
+.score-panel .stars li {
+	list-style: none;
+	display: inline-block;
+}
+
+.score-panel .restart {
+	float: right;
+	cursor: pointer;
+}
+
+.fa-star {
+	color: #ffd700;
+}
+
+.timer {
+	display: inline-block;
+	margin: 0 1rem;
+}
+
+
+/* Style for Congratulations*/
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom:0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+
+.congrats {
+	margin: 50px auto;
+	padding: 20px;
+	background: #ffffff;
+	border-radius: 5px;
+	width: 45%;
+	position: relative;
+	transition: all 5s ease-in-out;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.congrats h2 {
+	text-align: center;
+	margin-top: 0;
+	color: #333;
+	font-family: 'Spicy Rice', cursive;
+}
+
+.congrats .close {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	padding: 10px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+}
+
+.congrats .close:hover {
+	color: #d22780;
+}
+
+.congrats 
+.message1,
+.message2 {
+	max-height: 30%;
+	overflow: auto;
+	text-align: center;
+}
+
+.show {
+	visibility: visible !important;
+	opacity: 100 !important;
+	
+}
+
+#starRating li {
+	display: inline-block;
+}
+
+#new-game {
+	background-color: #d22780;
+	padding: 0.7rem 1rem;
+	font-size: 1.1rem;
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	border-radius: 5px;
+}
+
+/* Style for Footer */
+
+.footer {
+	background-color: #228c7b;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	width: 100%;
+	padding: 15px 10px;
+}
+.footer p {
+	color: white;
+	font-family: inherit;
+}
+p a:link {
+	color: white;
+}
+
+
+
+
+
+/* Media Queries */
+
+/* For mobile phones */
+
+@media only screen and (max-width: 480px){
+	.deck {
+		width:280px;
+		height: 300px;
+		margin: 30px auto;
+	}
+	.deck .card {
+		width: 3.2rem;
+		height: 3.5rem;
+	}
+	.footer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 100px;
+	}
+	.footer p {
+		text-align: center;
+	}
+}
+
+/* For larger phones and Tablets-Portrait */
+@media only screen and (min-width: 481px){
+	.deck {
+		width: 450px;
+		height: 500px;
+	}
+	.deck .card {
+		width: 5.2rem;
+		height: 6.2rem;
+	}
+	
+}
+
+/* For Tablets--Landscape, Laptops */
+@media only screen and (min-width: 770px) {
+	.deck {
+		width: 660px;
+	  height: 720px; 
+	}
+	.deck .card {
+		height: 161px;
+    width: 141px;
+	}
+}
+
+
+
+
+
+
+	
+
+
