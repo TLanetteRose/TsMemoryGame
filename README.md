@@ -2,19 +2,28 @@
 Memory Game project from Udacity with the help of tutorials
 
 ## Table of Contents
-* Welcome and Background 
-* Instructions 
-* Dependencies 
-* Installations 
-* How I Created My Game 
+* Welcome and Background {#welcomeandbackground}
+* Instructions {#instructions}
+* Dependencies {#dependencies}
+* Installations {#installations}
+* How I Created My Game {#howicreatedmygame}
 
 ## Welcome and Background
 
-Welcome to my first **Memory Game**. (Actually, it’s my third one, and the one that works.)  I want to say thank you to [Sandra Israel-Ovirih] for her tutorial about designing a memory game. JavaScript is not my strongest area. Ms. Israel-Ovirih included guidelines for planning this project. My goal was to produce a memory game with a cover image and the group of matching images on the other side of the card. I’m still working on that version. This version uses the **Font Awesome**  icons and a special trick to keep them hidden…So, let’s talk about my project!
+Welcome to my first **Memory Game**. (Actually, it’s my third one, and the one that works.)  I want to say thank you to [] for her tutorial about designing a memory game. JavaScript is not my strongest area. Ms. Israel-Ovirih included guidelines for planning this project. My goal was to produce a memory game with a cover image and the group of matching images on the other side of the card. I’m still working on that version. This version uses the **Font Awesome**  icons and a special trick to keep them hidden…So, let’s talk about my project!
+
+## How to Play
+First load my game link to my game into your browser: https://tlanetterose.github.io/TsMemoryGame/
 
 ## Instructions
 
-I remember playing **Concentration** with a deck of playing cards when I was a little girl. It was a thrill to see if I could remember where the matching cards were located. That’s the same concept in my memory game. There are 16 cards with different icons. Players can test their skills at remembering where the matching icons are located. The matching cards will stay open and display as a turquoise blue. The unmatched cards will do a little (very tiny) movement and turn reddish-pink before they turn over. 
+I remember playing **Concentration** with a deck of playing cards when I was a little girl. It was a thrill to see if I could remember where the matching cards were located. That’s the same concept in my memory game. There are 16 cards with different icons. Players can test their skills at remembering where the matching icons are located. 
+* Click on a card to reveal the picture;
+* Click on the second card to see if it matches;
+* The matching cards will stay open and display as a turquoise blue; 
+* The unmatched cards will do a little (very tiny) movement and turn reddish-pink before they turn over;
+* Continue clicking on cards to find the matching pairs;
+* Try to match the cards using as few moves and as less time as you can. 
 
 ## Dependencies
 
