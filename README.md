@@ -8,7 +8,6 @@ Memory Game project from Udacity with the help of tutorials
 * [Installations](#installations) 
 * [How I Created My Game](#how-i-created-my-game) 
 
-...
 
 ## Welcome and Background
 
