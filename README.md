@@ -2,7 +2,7 @@
 Memory Game project from Udacity with the help of tutorials
 
 ## Table of Contents
-* Welcome and Background 
+* [Welcome and Background](#welcomeandbackground) 
 * Instructions 
 * Dependencies 
 * Installations 
