@@ -2,11 +2,11 @@
 Memory Game project from Udacity with the help of tutorials
 
 ## Table of Contents
-* [Welcome and Background](#welcomeandbackground) 
+* [Welcome and Background](#welcome-and-background) 
 * Instructions 
 * Dependencies 
 * Installations 
-* How I Created My Game 
+* [How I Created My Game](#how-i-created-my-game) 
 
 ## Welcome and Background
 
